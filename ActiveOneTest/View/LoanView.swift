@@ -5,8 +5,6 @@
 //  Created by Xavier Sotomayor on 2/3/24.
 //
 
-import Foundation
-
 import SwiftUI
 
 struct LoanView: View {
