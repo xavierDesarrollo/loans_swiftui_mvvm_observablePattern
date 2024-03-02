@@ -81,22 +81,26 @@ struct LoanView: View {
                             .cornerRadius(20)
                         }
                         ZStack {
-                            VStack(alignment: .trailing) {
-                                Button(action: {
-                                    viewModel.goToDetails()
-                                }, label: {
-                                    HStack(spacing: 4) {
-                                        Image(systemName: "arrow.right")
-                                            .resizable()
-                                            .frame(width: 14, height: 8, alignment: .center)
-                                    }
-                                })
-                                .frame(width: 35, height: 35, alignment: .center)
-                                .accentColor(.white)
-                                .background(Color.black.opacity(0.2))
-                                .cornerRadius(18)
-                                Spacer()
-                                Text("Upcoming\npayments").font(.system(size: 14).bold()).foregroundStyle(.white)
+                            VStack(alignment: .leading) {
+                                HStack {
+                                    Spacer()
+                                    Button(action: {
+                                        viewModel.goToDetails()
+                                    }, label: {
+                                        HStack(spacing: 4) {
+                                            Image(systemName: "arrow.right")
+                                                .resizable()
+                                                .frame(width: 14, height: 8, alignment: .center)
+                                        }
+                                    })
+                                    .frame(width: 35, height: 35, alignment: .center)
+                                    .accentColor(.white)
+                                    .background(Color.black.opacity(0.2))
+                                    .cornerRadius(18)
+                                }
+                                HStack {
+                                    Text("Upcoming\npayments").font(.system(size: 14).bold()).foregroundStyle(.white)
+                                }
                             }
                             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 80, maxHeight: 80, alignment: .leading)
                             .padding(EdgeInsets(top: 20, leading: 20, bottom: 20, trailing: 20))
@@ -123,6 +127,9 @@ struct LoanView_Previews: PreviewProvider {
         LoanView()
     }
 }
+
+
+
 
 
 
