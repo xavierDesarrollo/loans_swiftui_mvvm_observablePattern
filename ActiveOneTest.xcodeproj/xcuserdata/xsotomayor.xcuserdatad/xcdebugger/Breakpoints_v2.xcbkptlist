@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "3546F335-10BA-4680-9346-37F9D66EC299"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3C9D0CB1-308C-4E67-8E14-3E43C03922D0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ActiveOneTest/Services/LoanService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "getLoanData(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3C9D0CB1-308C-4E67-8E14-3E43C03922D0 - 9b69409f31fbd530"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static ActiveOneTest.LoanService.getLoanData(completion: (Swift.Result&lt;ActiveOneTest.Loan, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "ActiveOneTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xsotomayor/Downloads/Xavier/Xavier/SwiftUI/ActiveOneTest/ActiveOneTest/Services/LoanService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "488">
+               </Location>
+               <Location
+                  uuid = "3C9D0CB1-308C-4E67-8E14-3E43C03922D0 - 9b69409f31fbd572"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static ActiveOneTest.LoanService.getLoanData(completion: (Swift.Result&lt;ActiveOneTest.Loan, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "ActiveOneTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xsotomayor/Downloads/Xavier/Xavier/SwiftUI/ActiveOneTest/ActiveOneTest/Services/LoanService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "404">
+               </Location>
+               <Location
+                  uuid = "3C9D0CB1-308C-4E67-8E14-3E43C03922D0 - 9b69409f31fbd572"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static ActiveOneTest.LoanService.getLoanData(completion: (Swift.Result&lt;ActiveOneTest.Loan, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "ActiveOneTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xsotomayor/Downloads/Xavier/Xavier/SwiftUI/ActiveOneTest/ActiveOneTest/Services/LoanService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "256">
+               </Location>
+               <Location
+                  uuid = "3C9D0CB1-308C-4E67-8E14-3E43C03922D0 - 9b69409f31fbd572"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static ActiveOneTest.LoanService.getLoanData(completion: (Swift.Result&lt;ActiveOneTest.Loan, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "ActiveOneTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xsotomayor/Downloads/Xavier/Xavier/SwiftUI/ActiveOneTest/ActiveOneTest/Services/LoanService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "264">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "66D07A8E-4223-4EF2-B5C3-3E3812156E8D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ActiveOneTest/View/LoanView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
