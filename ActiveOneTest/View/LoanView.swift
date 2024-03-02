@@ -86,13 +86,7 @@ struct LoanView: View {
                                     HStack {
                                         Spacer()
                                         NavigationLink(destination: LoanDetailView()) {
-                                            Button(action: {}, label: {
-                                                HStack(spacing: 4) {
-                                                    Image(systemName: "arrow.right")
-                                                        .resizable()
-                                                        .frame(width: 14, height: 8, alignment: .center)
-                                                }
-                                            })
+                                            Text("\(Image(systemName: "arrow.right"))")
                                             .frame(width: 35, height: 35, alignment: .center)
                                             .accentColor(.white)
                                             .background(Color.black.opacity(0.2))
@@ -128,12 +122,3 @@ struct LoanView_Previews: PreviewProvider {
         LoanView()
     }
 }
-
-
-
-
-
-
-
-
-
