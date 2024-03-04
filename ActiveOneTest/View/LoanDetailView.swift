@@ -8,21 +8,19 @@
 import SwiftUI
 
 struct LoanDetailView: View {
-    
     var loan: Loan!
-    
     var body: some View {
         VStack(alignment: .leading, spacing: 30) {
             VStack(alignment: .leading) {
-                Text("Due in 0 days").font(.system(size: 14).bold()).foregroundStyle(.gray)
-                Text("$0").font(.system(size: 30, design: .rounded).bold())
+                Text("Due in \(loan.paymentDetails.dueInDays) days").font(.system(size: 14).bold()).foregroundStyle(.gray)
+                Text("$\(String(loan.paymentDetails.amountDue))").font(.system(size: 30, design: .rounded).bold())
             }
             HStack(alignment: .center, spacing: 3) {
                 Text("Next payment").font(.system(size: 14).bold()).foregroundStyle(.gray)
-                Text("0").font(.system(size: 15).bold())
+                Text("$\(loan.paymentDetails.nextPaymentDate)").font(.system(size: 15).bold())
                 Spacer()
-                Text("0").font(.system(size: 15).bold())
-                Text("of 0 payments").font(.system(size: 14).bold()).foregroundStyle(.gray)
+                Text("\(loan.paymentDetails.paymentProgress.currentPaymentNumber)").font(.system(size: 15).bold())
+                Text("of \(loan.paymentDetails.paymentProgress.totalPayments) payments").font(.system(size: 14).bold()).foregroundStyle(.gray)
             }
             Button(action: {
                         
@@ -37,8 +35,8 @@ struct LoanDetailView: View {
         .padding(EdgeInsets(top: 20, leading: 20, bottom: 0, trailing: 20))
         .background(Color.loanBackground)
         .cornerRadius(30)
-            
     }
+    
 }
 
 struct LoanDetailView_Previews: PreviewProvider {
