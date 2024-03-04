@@ -13,11 +13,18 @@ struct LoanDetailView: View {
         VStack(alignment: .leading, spacing: 30) {
             VStack(alignment: .leading) {
                 Text("Due in \(loan.paymentDetails.dueInDays) days").font(.system(size: 14).bold()).foregroundStyle(.gray)
-                Text("$\(String(loan.paymentDetails.amountDue))").font(.system(size: 30, design: .rounded).bold())
+                HStack(alignment: .bottom, spacing: 0) {
+                    Text("$\(String(String(loan.paymentDetails.amountDue).split(separator: ".").first!))").font(.system(size: 30, design: .rounded).bold())
+                    Text(".\(String(String(loan.paymentDetails.amountDue).split(separator: ".").last!))").font(.system(size: 25, design: .rounded).bold()).foregroundStyle(.gray)
+                    Spacer()
+                    Image(systemName: "creditcard")
+                        .resizable()
+                        .frame(width: 50, height: 40)
+                }
             }
             HStack(alignment: .center, spacing: 3) {
                 Text("Next payment").font(.system(size: 14).bold()).foregroundStyle(.gray)
-                Text("$\(loan.paymentDetails.nextPaymentDate)").font(.system(size: 15).bold())
+                Text("\(loan.paymentDetails.nextPaymentDate)").font(.system(size: 15).bold())
                 Spacer()
                 Text("\(loan.paymentDetails.paymentProgress.currentPaymentNumber)").font(.system(size: 15).bold())
                 Text("of \(loan.paymentDetails.paymentProgress.totalPayments) payments").font(.system(size: 14).bold()).foregroundStyle(.gray)
@@ -41,7 +48,11 @@ struct LoanDetailView: View {
 
 struct LoanDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        LoanDetailView()
+        var paymentProgress = PaymentProgress(currentPaymentNumber: 9, totalPayments: 10)
+        var paymentDetails = PaymentDetails.init(dueInDays: 2, amountDue: 395.93, nextPaymentDate: "2024-02-24", paymentProgress: paymentProgress)
+        var loanDetails = LoanDetails(loanID: "", remainingBalance: 1, amountBorrowed: 2, interestPaidToDate: 3.0, interestRate: 4.0, maxCreditAmount: 5, repaymentDay: 6, lastFourPaymentCard: "", numberOfDocuments: 7)
+        var loan = Loan(email: "", paymentDetails: paymentDetails, loanDetails: loanDetails)
+        LoanDetailView(loan: loan)
     }
 }
 
