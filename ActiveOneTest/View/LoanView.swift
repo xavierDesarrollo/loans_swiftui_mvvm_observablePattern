@@ -17,10 +17,10 @@ struct LoanView: View {
                 if let loan = viewModel.loan {
                     Text("LOAN\nDETAILS").font(.system(size: 30, design: .rounded).bold())
                     HStack(alignment: .center, spacing: 3) {
-                        Text("Left").font(.system(size: 14))
+                        Text("Left").font(.system(size: 14).bold()).foregroundStyle(.gray)
                         Text("$\(loan.loanDetails.remainingBalance)").font(.system(size: 15).bold())
                         Spacer()
-                        Text("Amount Borrowed").font(.system(size: 14))
+                        Text("Amount Borrowed").font(.system(size: 14).bold()).foregroundStyle(.gray)
                         Text("$\(loan.loanDetails.amountBorrowed)").font(.system(size: 15).bold())
                     }
                     HStack(alignment: .center, spacing: 2) {
