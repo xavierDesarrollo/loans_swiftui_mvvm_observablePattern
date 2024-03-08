@@ -1,4 +1,4 @@
-# swift_mvvm_observablePattern
+# loans_swift_mvvm_observablePattern
 This app retrieve a loan details.
 
 Init project:
